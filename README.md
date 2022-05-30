@@ -5,18 +5,22 @@ Changes the class of an informed character.
 
 ### Usage
 
-Add the stored procedure to the Server01 database and run the command:
+Add the stored procedure to the **Server01** database and run the command:
 
-`EXEC Server01.dbo.Change_Character_Class 'CharacterIdx', 'New Battle Style';`
+```sql
+EXEC [Server01].[dbo].[Change_Character_Class] '@CharacterIdx', '@New_Battle_Style_ID';
+```
 
-- **CharacterIdx** = character id whose class will be changed.
-- **New Battle Style** = Number of the new Class.
+- **@CharacterIdx** = character id whose class will be changed.
+- **@New_Battle_Style_ID** = number of the new Class.
 
-**BattleStyles:**
+<p>&nbsp;</p>
 
-1. Warrior
-2. Blader
-3. Wizzard
-4. Force Archer
-5. Force Shielder
-6. Force Blader
+Style ID | Class
+:---:|:---:
+1  | Warrior
+2  | Blader
+3  | Wizzard
+4  | Force Archer
+5  | Force Shielder
+6  | Force Blader
